@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 55px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 19px -4px rgba(204, 204, 204, 0.42);
+
+  .containerProgres {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    progress {
+      max-width: 90px;
+    }
+
+    progress {
+      width: 100px;
+      height: 10px;
+      border-radius: 10px; 
+      overflow: hidden;
+      transition: 0.5s; 
+    }
+
+    progress::-webkit-progress-bar {
+      background-color: lightgray; 
+      border-radius: 10px; 
+    }
+
+    progress::-webkit-progress-value {
+      background-color: #00ba00; 
+      border-radius: 10px;
+      transition: 0.3s; 
+    }
+
+    progress::-moz-progress-bar {
+      background-color: #00ba00; 
+      border-radius: 10px;
+      transition: 0.3s; 
+    }
+
+    span {
+      font-size: 20px;
+      display: block;
+      color: #ffffff;
+      background-color: darkgray;
+      padding: 3px 13px;
+      border-radius: 50%;
+    }
+
+    img {
+      max-width: 30px;
+    }
+
+    .img1 {
+      display: none;
+    }
+    .img2 {
+      display: none;
+    }
+    .img3 {
+      display: none;
+    }
+    .img4 {
+      display: none;
+    }
+  }
+
+  .wrapperBtns {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    margin-top: 26px;
+
+    button {
+      font-size: 20px;
+      display: block;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 7px;
+      color: #ffffff;
+      background-color: blueviolet;
+      border: none;
+    }
+  }
+}

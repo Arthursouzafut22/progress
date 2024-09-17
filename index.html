@@ -3,29 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Document</title>
   </head>
   <body>
+    <div class="wrapper">
+      <div class="containerProgres">
+        <progress class="progress" value="0" max="50"></progress>
+        <span>1</span>
+        <img src="img/verificar (3).png" alt="img" class="img1" />
+        <progress class="progress" value="0" max="50"></progress>
+        <span>2</span>
+        <img src="img/verificar (3).png" alt="img" class="img2" />
+        <progress class="progress" value="0" max="50"></progress>
+        <span>3</span>
+        <img src="img/verificar (3).png" alt="img" class="img3" />
+        <progress class="progress" value="0" max="50"></progress>
+        <span>4</span>
+        <img src="img/verificar (3).png" alt="img" class="img4" />
+      </div>
+      <div class="wrapperBtns">
+        <button class="btnPrev">Prev</button>
+        <button class="btnNext">Next</button>
+      </div>
+    </div>
 
-    
-
-    <form class="conteiner-search">
-      <input type="text" id="input" placeholder="search Imagens">
-      <button class="btn-search">Buscar</button>
-    </form>
-
-    <section class="section">
-      <!-- <div class="div-gale">
-        <img src="" alt="" class="img-gallery">
-        <div class="container-link">
-          <a href="" class="linkImg"></a>
-        </div>
-      </div> -->
-    </section>
-
-    <button id="show-more-button">Show more</button>
-
-    <script src="script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
